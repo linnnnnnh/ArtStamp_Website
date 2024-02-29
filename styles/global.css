@@ -1,20 +1,15 @@
+@font-face {
+  font-family: 'Circular';
+  src: url('fonts/CircularStd-Light.otf') format('opentype');
+  src: url('fonts/CircularStd-Medium.otf') format('opentype');
+  src: url('fonts/CircularStd-Book.otf') format('opentype');
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
+  font-family: 'Circular', sans-serif;
 }
 
 a {
@@ -27,6 +22,6 @@ a {
 }
 
 img {
-  max-width: 100%;
+  image-rendering: optimizeQuality;
   height: auto;
 }
