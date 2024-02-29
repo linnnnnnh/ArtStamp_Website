@@ -35,7 +35,7 @@
 .title {
   margin: 0 0 1rem;
   line-height: 1.15;
-  font-size: 5rem;
+  font-size: 4rem;
   color: #f9bd08;
 }
 
@@ -50,7 +50,7 @@
 
 .description {
   line-height: 1.5;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .gridLeft {
@@ -58,7 +58,7 @@
   align-items: center;
   justify-content: left;
   flex-wrap: wrap;
-  width: 1500px;
+  width: 1200px;
   /* max-width: 800px; */
   margin-top: 3rem;
 }
@@ -68,7 +68,7 @@
   align-items: center;
   justify-content: right;
   flex-wrap: wrap;
-  width: 1500px;
+  width: 1200;
   /* max-width: 800px; */
   margin-top: 3rem;
 }
