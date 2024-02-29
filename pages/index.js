@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import Layout from '../components/layout';
 import React from 'react';
 import FlowingWords from '../components/FlowingWords';
+import Helmet from "react-helmet"
 
 export default function Home() {
   return (
@@ -25,6 +26,12 @@ export default function Home() {
           </h1>
 
           <FlowingWords />
+
+          <div className={styles.waitlist} id="getWaitlistContainer" data-waitlist_id="14121" data-widget_type="WIDGET_1"></div>
+          <Helmet>
+            <link rel="stylesheet" type="text/css" href="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.css" />
+            <script src="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js"></script>
+          </Helmet>
 
           <div className={styles.gridLeft}>
             <a className={styles.card}>

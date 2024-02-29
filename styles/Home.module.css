@@ -122,3 +122,10 @@
   color: #f9bd08;
   font-size: 1.5rem;
 }
+
+.waitlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
