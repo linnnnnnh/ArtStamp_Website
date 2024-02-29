@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css';
 function FlowingWords() {
     useEffect(() => {
         const options = {
-            strings: ['intellectual property', 'AI art', 'saveguard promptly your creative process!', 'AI artist', 'copyright', 'human intervention',
+            strings: ['intellectual property', 'AI art', 'safeguard promptly your creative process!', 'AI artist', 'copyright', 'human intervention',
                 'human authorship', 'degree of intellectual involvement', 'creative expression', 'human creativity and the artistic expression'],
             typeSpeed: 50,
             loop: true

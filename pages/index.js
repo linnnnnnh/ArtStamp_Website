@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import React from 'react';
 import FlowingWords from '../components/FlowingWords';
 import Helmet from "react-helmet"
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -38,9 +39,23 @@ export default function Home() {
               <h3>The problem &rarr;</h3>
               <p>AI-generated art is gaining traction in the art industry, offering a unique blend of creativity and technology. While only a fraction of people have encountered AI art, a majority of those who have enjoy it. However, debates around its ethical implications persist, with many artists expressing concerns about its impact on originality. As AI technology advances, it raises questions about the future of artistry and the role of human creativity in the AI age.</p>
             </a>
+            <div className={styles.imageContainerUp}>
+              <Image
+                src="/ai_art.png"
+                width={450}
+                height={450}
+                alt="Image"
+              />
+            </div>
           </div>
 
           <div className={styles.gridRight}>
+            <div className={styles.imageContainerDown}>
+              <video controls autoplay loop className="video" width={450} height={450}>
+                <source src="/ai.mp4" type="video/mp4" />
+              </video>
+            </div>
+
             <a className={styles.card}>
               <h3>Our solution &rarr;</h3>
               <p>Litchi a tool that
