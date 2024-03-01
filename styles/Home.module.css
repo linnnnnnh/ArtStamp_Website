@@ -53,7 +53,7 @@
   font-size: 1.8rem;
 }
 
-.gridLeft {
+.gridUp {
   display: flex;
   align-items: center;
   justify-content: left;
@@ -64,7 +64,7 @@
   margin-left: 0;
 }
 
-.gridRight {
+.gridDown {
   display: flex;
   align-items: center;
   justify-content: right;
@@ -72,11 +72,12 @@
   width: 1200;
   /* max-width: 800px; */
   margin-top: 3rem;
+  margin-right: 0;
 }
 
 .card {
   margin: 1rem;
-  flex-basis: 45%;
+  /* flex-basis: 45%; */
   padding: 1.5rem;
   text-align: left;
   color: #eeecec;
@@ -86,6 +87,16 @@
   transition:
     color 0.15s ease,
     border-color 0.15s ease;
+}
+
+.cardUp {
+  width: 600px;
+  height: 470px;
+}
+
+.cardDown {
+  width: 600px;
+  height: 540px;
 }
 
 .card:hover,

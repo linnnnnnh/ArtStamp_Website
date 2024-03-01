@@ -34,8 +34,8 @@ export default function Home() {
             <script src="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js"></script>
           </Helmet>
 
-          <div className={styles.gridLeft}>
-            <a className={styles.card}>
+          <div className={styles.gridUp}>
+            <a className={`${styles.card} ${styles.cardUp}` }>
               <h3>The problem &rarr;</h3>
               <p>AI-generated art is gaining traction in the art industry, offering a unique blend of creativity and technology. While only a fraction of people have encountered AI art, a majority of those who have enjoy it. However, debates around its ethical implications persist, with many artists expressing concerns about its impact on originality. As AI technology advances, it raises questions about the future of artistry and the role of human creativity in the AI age.</p>
             </a>
@@ -49,14 +49,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={styles.gridRight}>
+          <div className={styles.gridDown}>
             <div className={styles.imageContainerDown}>
               <video controls autoplay loop className="video" width={450} height={450}>
                 <source src="/ai.mp4" type="video/mp4" />
               </video>
             </div>
 
-            <a className={styles.card}>
+            <a className={`${styles.card} ${styles.cardDown}`}>
               <h3>Our solution &rarr;</h3>
               <p>Litchi a tool that
                 records the creative process of an AI artist that generates an artwork on
@@ -143,7 +143,7 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-      </div>
-    </Layout>
+      </div >
+    </Layout >
   );
 }
