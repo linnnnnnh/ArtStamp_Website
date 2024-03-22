@@ -73,8 +73,7 @@ export default function Home() {
         </main>
 
         <footer>
-          Powered by{' '}
-          <img src="/xrplcommons.svg" alt="xrpl" className={styles.logo} />
+          Powered by Autonomous Agent: AI x Web3 Hackathon 2024
         </footer>
 
         <style jsx>{`

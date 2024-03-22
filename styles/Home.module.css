@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -6,9 +8,11 @@
   justify-content: center;
   align-items: center;
   background-color: #19695c;
+  font-family: "Quicksand";
 }
 
 .navbar {
+  font-family: "Quicksand";
   background-color: #19695c;
   height: 90px;
   display: flex;
@@ -21,7 +25,12 @@
   justify-content: space-between;
 }
 
+.navbar h1 {
+  color: #eeecec;
+}
+
 .title a {
+  font-family: "Quicksand";
   color: #0070f3;
   text-decoration: none;
 }
@@ -33,6 +42,7 @@
 }
 
 .title {
+  font-family: "Quicksand";
   margin: 0 0 1rem;
   line-height: 1.15;
   font-size: 4rem;
@@ -44,6 +54,7 @@
 }
 
 .description {
+  font-family: "Quicksand";
   text-align: center;
   color: #eeecec;
 }
@@ -148,4 +159,45 @@
 
 .imageContainerDown {
   margin-right: 100px;
+}
+
+/* styles.module.css or a similar file */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Creates three columns */
+  gap: 10px;
+  /* Adjusts the gap between grid items */
+}
+
+.gridItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.gridItem img {
+  max-width: 100%;
+  /* Makes sure the image doesn't exceed the cell's width */
+  max-height: 200px;
+  /* Adjusts the image's maximum height */
+}
+
+.homelink {
+  padding-left: 30px;
+  font-size: 25px;
+  color: #eeecec;
+}
+
+.registrylink {
+  padding-right: 10px;
+  font-size: 25px;
+  color: #eeecec;
+}
+
+.allartworks h1 {
+  font-family: "Quicksand";
+  padding-left: 30px;
+  padding-bottom: 30px;
 }
