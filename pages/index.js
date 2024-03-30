@@ -63,7 +63,7 @@ export default function Home() {
 
           <div className={styles.gridDown}>
             <div className={styles.imageContainerDown}>
-              <video controls autoplay loop className="video" width={400} height={400}>
+              <video controls autoPlay loop className="video" width={400} height={400}>
                 <source src="/ai.mp4" type="video/mp4" />
               </video>
             </div>

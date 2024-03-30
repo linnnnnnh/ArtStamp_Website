@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 
 export default function AllArtworks() {
     const [imageUrls, setImageUrls] = useState([]);
