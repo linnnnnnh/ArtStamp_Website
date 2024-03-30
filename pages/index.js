@@ -5,28 +5,40 @@ import React from 'react';
 import FlowingWords from '../components/FlowingWords';
 import Helmet from "react-helmet"
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <Layout>
       <div className={styles.container}>
         <Head>
-          <title>Safeguard promptly!</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
         <main>
-          <h2 className={styles.title}>
-            Safeguard promptly!
-          </h2>
-          <h1 className={styles.description} style={{ marginBottom: '0px' }}>
-            Timestamp your prompt conversation,
-          </h1>
-          <h1 className={styles.description} style={{ marginTop: '0px' }}>
-            value the creative process in your AI art.
-          </h1>
-
-          <FlowingWords />
+          <div className={styles.containerForImageTagline}>
+            <div className={styles.circularImage}>
+              <Image
+                src="/midjourneywrok1.png"
+                alt="girl"
+                width={400}
+                height={400}
+                layout="fixed"
+              />
+            </div>
+            <div className={styles.titleContainer}>
+              <h2 className={styles.title}>
+                Unleash <br />
+                your creativity <br />
+                with confidence <br />
+              </h2>
+              <h1 className={styles.description} style={{ marginBottom: '0px' }}>
+                A tool for AI art creators <br />
+                to prove their intellectual effort <br />
+                in the creation process <br />
+              </h1>
+              <FlowingWords />
+            </div>
+          </div>
 
           <div className={styles.waitlist} id="getWaitlistContainer" data-waitlist_id="14121" data-widget_type="WIDGET_1"></div>
           <Helmet>
@@ -72,8 +84,17 @@ export default function Home() {
 
         </main>
 
-        <footer>
-          Powered by Autonomous Agent: AI x Web3 Hackathon 2024
+        <footer className={styles.footer}>
+          Project powered by XRPL Commons
+          <Link href="https://www.xrpl-commons.org/" passHref>
+            <Image
+              src="/xrpl_logo.jpeg"
+              alt="Twitter"
+              width={50}
+              height={50}
+            />
+          </Link>
+
         </footer>
 
         <style jsx>{`

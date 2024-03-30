@@ -5,10 +5,10 @@ import styles from '../styles/Home.module.css';
 function Navbar() {
     return (
         <div className={styles.navbar}>
-            <Image
-                src="/artstampB.svg"
+            <Image className={styles.navbarLogo}
+                src="/artstampWsvg.svg"
                 width={300}
-                height={70}
+                height={85}
                 alt="Logo"
             />
             <Link href="/all-artworks" passHref className={styles.registrylink}>
@@ -16,6 +16,14 @@ function Navbar() {
             </Link>
             <Link href="/" passHref className={styles.homelink}>
                 Home
+            </Link>
+            <Link href="https://twitter.com/_ArtStamp" passHref>
+                <Image
+                    src="/twitterwhite.jpg"
+                    alt="Twitter"
+                    width={50}
+                    height={50}
+                />
             </Link>
         </div>
 

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -7,31 +5,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #19695c;
-  font-family: "Quicksand";
+  background-color: #121212;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .navbar {
-  font-family: "Quicksand";
-  background-color: #19695c;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  background-color: #121212;
   height: 90px;
   display: flex;
   align-items: center;
   padding: 0 20px;
-  /* Adjust padding as needed */
-  box-shadow: 0 2px 4px rgba(114, 51, 51, 0.1);
   width: 100%;
-  border-bottom: 6px solid #f9bd08;
+  /* border-bottom: 1px solid #dec895; */
   justify-content: space-between;
+}
+
+.navbarLogo {
+  padding-top: 20px;
 }
 
 .navbar h1 {
   color: #eeecec;
 }
 
+.footer {
+  color: #eeecec;
+}
+
 .title a {
-  font-family: "Quicksand";
-  color: #0070f3;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  color: #eeecec;
   text-decoration: none;
 }
 
@@ -41,27 +45,63 @@
   text-decoration: underline;
 }
 
+.containerForImageTagline {
+  display: flex;
+  /* Establishes a flex container */
+  justify-content: center;
+  /* Centers children horizontally in the container */
+  align-items: center;
+  /* Aligns children vertically in the center */
+}
+
+.circularImage {
+  border-radius: 50%;
+  overflow: hidden;
+  /* Ensures the image does not spill outside the border */
+  width: 400px;
+  /* Width of the circle */
+  height: 400px;
+  /* Height of the circle, should match width for a perfect circle */
+  display: inline-block;
+  /* Helps center the image in the div */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+}
+
+.circularImage img {
+  width: 400px;
+  /* Adjusts width based on the height */
+  height: 400px;
+  /* Makes the image fully occupy the container's height */
+  object-fit: cover;
+  /* Ensures the image covers the area without stretching */
+}
+
+
+
+.titleContainer {
+  padding-left: 100px;
+}
+
 .title {
-  font-family: "Quicksand";
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 1rem;
-  line-height: 1.15;
-  font-size: 4rem;
-  color: #f9bd08;
-}
-
-.title {
-  text-align: center;
-}
-
-.description {
-  font-family: "Quicksand";
-  text-align: center;
+  line-height: 1;
+  font-size: 5.5rem;
   color: #eeecec;
+  text-align: left;
 }
 
+
 .description {
-  line-height: 1.5;
-  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  color: #eeecec;
+  line-height: 1.1;
+  font-size: 2.5rem;
+  text-align: left;
 }
 
 .gridUp {
@@ -114,7 +154,7 @@
 .card:focus,
 .card:active {
   color: #eeecec;
-  border-color: #f9bd08;
+  border-color: #dec895;
 }
 
 .card h3 {
@@ -142,7 +182,7 @@
 
 .flowingWords {
   font-size: 20px;
-  color: #f9bd08;
+  color: #dec895;
   font-size: 1.5rem;
 }
 
@@ -161,13 +201,10 @@
   margin-right: 100px;
 }
 
-/* styles.module.css or a similar file */
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* Creates three columns */
   gap: 10px;
-  /* Adjusts the gap between grid items */
 }
 
 .gridItem {
@@ -179,9 +216,7 @@
 
 .gridItem img {
   max-width: 100%;
-  /* Makes sure the image doesn't exceed the cell's width */
   max-height: 200px;
-  /* Adjusts the image's maximum height */
 }
 
 .homelink {
@@ -196,8 +231,12 @@
   color: #eeecec;
 }
 
+.allartworks {
+  background-color: #121212;
+}
+
 .allartworks h1 {
-  font-family: "Quicksand";
   padding-left: 30px;
   padding-bottom: 30px;
+  margin-top: 0;
 }
