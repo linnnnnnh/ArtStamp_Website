@@ -1,279 +1,515 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #121212;
-<<<<<<< HEAD
-  font-family: "Quicksand";
-}
-
-.navbar {
-  font-family: "Quicksand";
-=======
-  /* font-family: Arial, Helvetica, sans-serif; */
-}
-
-.navbar {
-  /* font-family: Arial, Helvetica, sans-serif; */
->>>>>>> cd0e8a54944ea62c47d8ae4559afaa4d5f707619
-  background-color: #121212;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-<<<<<<< HEAD
-  box-shadow: 0 2px 4px rgba(114, 51, 51, 0.1);
-  width: 100%;
-  border-bottom: 6px solid #121212;
-=======
-  width: 100%;
-  /* border-bottom: 1px solid #dec895; */
->>>>>>> cd0e8a54944ea62c47d8ae4559afaa4d5f707619
-  justify-content: space-between;
-}
-
-.navbarLogo {
-  padding-top: 20px;
-}
-
-.navbar h1 {
-  color: #eeecec;
-}
-
-.footer {
-  color: #eeecec;
-}
-
-.title a {
-  /* font-family: Arial, Helvetica, sans-serif; */
-  color: #eeecec;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.containerForImageTagline {
-  display: flex;
-  /* Establishes a flex container */
-  justify-content: center;
-  /* Centers children horizontally in the container */
-  align-items: center;
-  /* Aligns children vertically in the center */
-}
-
-.circularImage {
-  border-radius: 50%;
-  overflow: hidden;
-  /* Ensures the image does not spill outside the border */
-  width: 400px;
-  /* Width of the circle */
-  height: 400px;
-  /* Height of the circle, should match width for a perfect circle */
-  display: inline-block;
-  /* Helps center the image in the div */
-  justify-content: center;
-  /* Center horizontally */
-  align-items: center;
-  /* Center vertically */
-}
-
-.circularImage img {
-  width: 400px;
-  /* Adjusts width based on the height */
-  height: 400px;
-  /* Makes the image fully occupy the container's height */
-  object-fit: cover;
-  /* Ensures the image covers the area without stretching */
-}
-
-
-
-.titleContainer {
-  padding-left: 100px;
-}
-
-.title {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0 0 1rem;
-<<<<<<< HEAD
-  line-height: 1.15;
-  font-size: 4rem;
-  color: #295ac5;
-}
-
-.title {
-  text-align: center;
-}
-
-.description {
-  font-family: "Quicksand";
-  text-align: center;
-=======
-  line-height: 1;
-  font-size: 5.5rem;
->>>>>>> cd0e8a54944ea62c47d8ae4559afaa4d5f707619
-  color: #eeecec;
-  text-align: left;
-}
-
-
-.description {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 0;
-  color: #eeecec;
-  line-height: 1.1;
-  font-size: 2.5rem;
-  text-align: left;
-}
-
-.gridUp {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  flex-wrap: wrap;
-  width: 1200px;
-  /* max-width: 800px; */
-  margin-top: 3rem;
-  margin-left: 0;
-}
-
-.gridDown {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  flex-wrap: wrap;
-  width: 1200;
-  /* max-width: 800px; */
-  margin-top: 3rem;
-  margin-right: 0;
-}
-
-.card {
-  margin: 1rem;
-  /* flex-basis: 45%; */
-  padding: 1.5rem;
-  text-align: left;
-  color: #eeecec;
-  text-decoration: none;
-  border: 2px solid #eeecec;
-  border-radius: 10px;
-  transition:
-    color 0.15s ease,
-    border-color 0.15s ease;
-}
-
-.cardUp {
-  width: 600px;
-  height: 470px;
-}
-
-.cardDown {
-  width: 600px;
-  height: 540px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #eeecec;
-<<<<<<< HEAD
-  border-color: #e6710e;
-=======
-  border-color: #dec895;
->>>>>>> cd0e8a54944ea62c47d8ae4559afaa4d5f707619
-}
-
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.5rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 30px;
-  width: 35px;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+/* mobile  */
+@media (max-width: 480px) {
+  .container {
+    min-height: 100vh;
+    padding: 0 1rem;
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #121212;
+  }
+
+  .navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(114, 51, 51, 0.1);
+    width: 100%;
+    border-bottom: 6px solid #121212;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .navbarLogo {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 150px;
+    height: 60px;
+  }
+
+  .navbar h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eeecec;
+  }
+
+  .footer {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eeecec;
+  }
+
+  .title a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eeecec;
+    text-decoration: none;
+  }
+
+  .title a:hover,
+  .title a:focus,
+  .title a:active {
+    text-decoration: underline;
+  }
+
+  .containerForImageTagline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .circularImage {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+  }
+
+  .circularImage img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .title {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.15;
+    font-size: 2.5rem;
+    color: #eeecec;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+
+  .description {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5px;
+    color: #eeecec;
+    line-height: 1.1;
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  .gridUp {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 340px;
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+
+  .gridDown {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+    width: 340px;
+    margin-top: 3rem;
+    margin-right: 0;
+  }
+
+  .card {
+    /* flex-basis: 45%; */
+    padding: 1.5rem;
+    text-align: left;
+    color: #eeecec;
+    text-decoration: none;
+    border: 2px solid #eeecec;
+    border-radius: 10px;
+    border-color: #dec895;
+  }
+
+  .cardDown {
+    width: 600px;
+    height: 540px;
+  }
+
+  .card:hover,
+  .card:focus,
+  .card:active {
+    color: #eeecec;
+    border-color: #dec895;
+  }
+
+  .card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .card p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .logo {
+    height: 30px;
+    width: 35px;
+  }
+
+  .flowingWordsContainer {
+    margin-top: 10px;
+  }
+
+  .flowingWords {
+    font-size: 15px;
+    color: #dec895;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .waitlistText {
+    margin-top: 50px;
+    font-size: 15px;
+    color: #eeecec;
+    margin-bottom: 0;
+  }
+
+  .waitlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+  }
+
+
+  .imageContainerUp {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .gridItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .gridItem img {
+    max-width: 100%;
+    max-height: 200px;
+  }
+
+  .homelink {
+    margin-left: 60px;
+    font-size: 15px;
+    color: #eeecec;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1.3px solid #295ac5;
+    color: #295ac5;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 6px 20px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+
+  .registrylink {
+    padding-right: 10px;
+    font-size: 15px;
+    color: #eeecec;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .allartworks {
+    background-color: #121212;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .allartworks h1 {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
 
-.flowingWords {
-  font-size: 20px;
-<<<<<<< HEAD
-  color: #eeecec;
-=======
-  color: #dec895;
->>>>>>> cd0e8a54944ea62c47d8ae4559afaa4d5f707619
-  font-size: 1.5rem;
+
+
+/* tablet  */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Tablet styles */
 }
 
-.waitlist {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 40px;
-}
 
-.imageContainerUp {
-  margin-left: 100px;
-}
 
-.imageContainerDown {
-  margin-right: 100px;
-}
+/* web browser  */
+@media (min-width: 769px) {
+  .container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+  }
 
-.gridContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
+  .navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(114, 51, 51, 0.1);
+    width: 100%;
+    border-bottom: 6px solid #121212;
+    width: 100%;
+    /* border-bottom: 1px solid #dec895; */
+    justify-content: space-between;
+  }
 
-.gridItem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .navbarLogo {
+    padding-top: 20px;
+  }
 
-}
+  .navbar h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eeecec;
+  }
 
-.gridItem img {
-  max-width: 100%;
-  max-height: 200px;
-}
+  .footer {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eeecec;
+  }
 
-.homelink {
-  padding-left: 30px;
-  font-size: 25px;
-  color: #eeecec;
-}
+  .title a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eeecec;
+    text-decoration: none;
+  }
 
-.registrylink {
-  padding-right: 10px;
-  font-size: 25px;
-  color: #eeecec;
-}
+  .title a:hover,
+  .title a:focus,
+  .title a:active {
+    text-decoration: underline;
+  }
 
-.allartworks {
-  background-color: #121212;
-}
+  .containerForImageTagline {
+    display: flex;
+    /* Establishes a flex container */
+    justify-content: center;
+    /* Centers children horizontally in the container */
+    align-items: center;
+    /* Aligns children vertically in the center */
+  }
 
-.allartworks h1 {
-  padding-left: 30px;
-  padding-bottom: 30px;
-  margin-top: 0;
+  .circularImage {
+    border-radius: 50%;
+    overflow: hidden;
+    /* Ensures the image does not spill outside the border */
+    width: 400px;
+    /* Width of the circle */
+    height: 400px;
+    /* Height of the circle, should match width for a perfect circle */
+    display: inline-block;
+    /* Helps center the image in the div */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+  }
+
+  .circularImage img {
+    width: 400px;
+    /* Adjusts width based on the height */
+    height: 400px;
+    /* Makes the image fully occupy the container's height */
+    object-fit: cover;
+    /* Ensures the image covers the area without stretching */
+  }
+
+  .titleContainer {
+    padding-left: 100px;
+  }
+
+  .title {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 1rem;
+    line-height: 1.15;
+    font-size: 4rem;
+    color: #295ac5;
+  }
+
+  .description {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 1;
+    font-size: 5.5rem;
+    color: #eeecec;
+    text-align: left;
+  }
+
+
+  .description {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    color: #eeecec;
+    line-height: 1.1;
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .gridUp {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 1200px;
+    /* max-width: 800px; */
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+
+  .gridDown {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+    width: 1200;
+    /* max-width: 800px; */
+    margin-top: 3rem;
+    margin-right: 0;
+  }
+
+  .card {
+    margin: 1rem;
+    /* flex-basis: 45%; */
+    padding: 1.5rem;
+    text-align: left;
+    color: #eeecec;
+    text-decoration: none;
+    border: 2px solid #eeecec;
+    border-radius: 10px;
+    transition:
+      color 0.15s ease,
+      border-color 0.15s ease;
+  }
+
+  .cardUp {
+    width: 600px;
+    height: 470px;
+  }
+
+  .cardDown {
+    width: 600px;
+    height: 540px;
+  }
+
+  .card:hover,
+  .card:focus,
+  .card:active {
+    color: #eeecec;
+    border-color: #e6710e;
+  }
+
+  .card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .card p {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .logo {
+    height: 30px;
+    width: 35px;
+  }
+
+  @media (max-width: 600px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  .flowingWords {
+    font-size: 20px;
+    color: #eeecec;
+    color: #dec895;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .waitlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .imageContainerUp {
+    margin-left: 100px;
+  }
+
+  .imageContainerDown {
+    margin-right: 100px;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .gridItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .gridItem img {
+    max-width: 100%;
+    max-height: 200px;
+  }
+
+  .homelink {
+    padding-left: 30px;
+    font-size: 25px;
+    color: #eeecec;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .registrylink {
+    padding-right: 10px;
+    font-size: 25px;
+    color: #eeecec;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .allartworks {
+    background-color: #121212;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .allartworks h1 {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 }

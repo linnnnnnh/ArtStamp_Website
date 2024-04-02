@@ -11,9 +11,9 @@ function Navbar() {
                 height={85}
                 alt="Logo"
             />
-            <Link href="/all-artworks" passHref className={styles.registrylink}>
+            {/* <Link href="/all-artworks" passHref className={styles.registrylink}>
                 AI art registry
-            </Link>
+            </Link> */}
             <Link href="/" passHref className={styles.homelink}>
                 Home
             </Link>

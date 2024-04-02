@@ -12,7 +12,7 @@ export default function Home() {
     <Layout>
       <div className={styles.container}>
         <Head>
-          <link rel="icon" href="/favicon.ico" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <main>
           <div className={styles.containerForImageTagline}>
@@ -20,8 +20,8 @@ export default function Home() {
               <Image
                 src="/midjourneywrok1.png"
                 alt="girl"
-                width={400}
-                height={400}
+                width={300}
+                height={300}
                 layout="fixed"
               />
             </div>
@@ -32,15 +32,18 @@ export default function Home() {
                 with confidence <br />
               </h2>
               <h1 className={styles.description} style={{ marginBottom: '0px' }}>
-                A tool for AI art creators <br />
-                to prove their intellectual effort <br />
+                A tool for AI art creators to <br />
+                prove their intellectual effort <br />
                 in the creation process <br />
               </h1>
               <FlowingWords />
             </div>
           </div>
 
-          <div className={styles.waitlist} id="getWaitlistContainer" data-waitlist_id="14121" data-widget_type="WIDGET_1"></div>
+          <h1 className={styles.waitlistText}>
+            Join our waitlist to test ArtStamp soon!
+          </h1>
+          <div className={styles.waitlist} id="getWaitlistContainer" data-waitlist_id="14121" data-widget_type="WIDGET_3"></div>
           <Helmet>
             <link rel="stylesheet" type="text/css" href="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.css" />
             <script src="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js"></script>
@@ -49,57 +52,42 @@ export default function Home() {
           <div className={styles.gridUp}>
             <a className={`${styles.card} ${styles.cardUp}`}>
               <h3>The problem &rarr;</h3>
-              <p>AI-generated art is gaining traction in the art industry, offering a unique blend of creativity and technology. While only a fraction of people have encountered AI art, a majority of those who have enjoy it. However, debates around its ethical implications persist, with many artists expressing concerns about its impact on originality. As AI technology advances, it raises questions about the future of artistry and the role of human creativity in the AI age.</p>
+              <p>AI-generated art is gaining traction in the art industry, offering a unique blend of creativity and technology.
+                However, the current court ruiling often exclude AI art from copyright protection due to its perceived lack of human
+                involvement, which puts AI artists at risk of losing copyright in legal disputes.
+                The challenge for AI artists is proving this intellectual involvement. The key to copyrighting AI art is to evidence
+                the human intellect behind the machine output.</p>
             </a>
-            <div className={styles.imageContainerUp}>
-              <Image
-                src="/ai_art.png"
-                width={400}
-                height={400}
-                alt="Image"
-              />
-            </div>
           </div>
 
+          {/* <div className={styles.imageContainerUp}>
+            <Image
+              src="/midjourneywrok2.png"
+              width={300}
+              height={300}
+              alt="Image"
+            />
+          </div> */}
           <div className={styles.gridDown}>
-            <div className={styles.imageContainerDown}>
-              <video controls autoPlay loop className="video" width={400} height={400}>
-                <source src="/ai.mp4" type="video/mp4" />
-              </video>
-            </div>
 
             <a className={`${styles.card} ${styles.cardDown}`}>
               <h3>Our solution &rarr;</h3>
-              <p>Litchi a tool that
-                records the creative process of an AI artist that generates an artwork on
-                any AI model. Our tool will record the entire creation process of an AI artist,
-                from the first prompt to the final artwork. It will then package this information
-                and the associated hash on the blockchain, providing a timestamp certificate.
-                This certificate will allow the users to demonstrate the whole process of
-                creation and most importantly, the intellectual involvement
-                in the generation of the content by AI in case of dispute (e.g.
-                litigation), so that to claim originality in their artwork.</p>
+              <p>Our solution empowers creators to timestamp their creative process, providing the proof of their intellectual effort in AI art creation.
+                ArtStamp is a browser extension offering a one-click solution to capture your entire creative process, every prompt and every image.
+                This creative process document acts as undeniable and immutable evidence of your intellectual contribution. If you face a copyright dispute years later, you
+                can prove that your creative process was recorded and preserved at the time of creation.
+              </p>
             </a>
           </div>
-
         </main>
 
         <footer className={styles.footer}>
-          Project powered by XRPL Commons
-          <Link href="https://www.xrpl-commons.org/" passHref>
-            <Image
-              src="/xrpl_logo.jpeg"
-              alt="Twitter"
-              width={50}
-              height={50}
-            />
-          </Link>
-
+          ArtStamp - ai.artstamp@gmail.com
         </footer>
 
         <style jsx>{`
         main {
-          padding: 5rem 0;
+          padding: 1rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
