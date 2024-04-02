@@ -54,7 +54,7 @@ export default function Home() {
               <h3>The problem &rarr;</h3>
               <p>AI-generated art is gaining traction in the art industry, offering a unique blend of creativity and technology.
                 However, the current court ruiling often exclude AI art from copyright protection due to its perceived lack of human
-                involvement, which puts AI artists at risk of losing copyright in legal disputes.
+                involvement, which puts AI artists at risk of losing their copyright in legal disputes.
                 The challenge for AI artists is proving this intellectual involvement. The key to copyrighting AI art is to evidence
                 the human intellect behind the machine output.</p>
             </a>
